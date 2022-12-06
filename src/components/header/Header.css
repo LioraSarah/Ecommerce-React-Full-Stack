@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+#topHeader {
+    background: rgba(127, 172, 250, 0.78);
+    color: #FFFFFF;
+    width: 100%;
+}
+#topNav {
+    display: inline-block;
+    float: right;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+#header-ul > li {
+    display: inline;
+    padding-left: 50px;
+}
+
+#logo {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#logo-h2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+#logIn {
+    text-decoration: underline;
+}

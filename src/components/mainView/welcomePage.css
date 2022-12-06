@@ -1,0 +1,8 @@
+#welcome-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10vw;
+    height: 10vh;
+    object-fit: fill;
+  }

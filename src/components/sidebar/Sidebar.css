@@ -1,0 +1,15 @@
+#sidebar-container {
+    width: 190px;
+    min-height: 100%;
+    color: #FFFFFF;
+}
+
+#sidebar-list {
+    color:#FFFFFF;
+    opacity: 1;
+    margin-top: 200px;
+}
+
+.sidebar-li {
+    padding-bottom: 50px;
+}

@@ -1,0 +1,36 @@
+.list-general {
+    list-style: none;
+}
+
+.main-button {
+    background-color: #7FACFA;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+NavLink {
+    color: white;
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(222, 139, 171, 0.6);
+}
+
+main {
+    display: inline-block;
+    width: 100%;
+}
