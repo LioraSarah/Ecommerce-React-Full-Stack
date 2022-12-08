@@ -1,5 +1,4 @@
-//import './Header.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useParams } from "react-router-dom";
 // import {
@@ -7,6 +6,7 @@ import { NavLink, useParams } from "react-router-dom";
 //   isLoading
 // } from '../../../features/catalogSlice';
 import { selectCartItems } from "../../../features/cartSlice";
+import { loadCart, removeItem } from "../../../features/cartSlice.js";
 import "./cart.css";
 
 export const Cart = () => {
@@ -15,6 +15,16 @@ export const Cart = () => {
   const catalogItemsPreview = useSelector(selectCartItems);
   console.log(catalogItemsPreview);
   // const isLoadingCatalog = useSelector(isLoading);
+
+    useEffect(() =>{
+      dispatch(loadCart());
+      console.log(catalogItemsPreview);}
+    , [dispatch, catalogItemsPreview]);
+
+  const handleClick = (e) => {
+    //console.log(e.target.name);
+    dispatch(removeItem(e.target.name));
+  }
 
   return (
     <article className="cart-container">
@@ -34,7 +44,7 @@ export const Cart = () => {
                 </p>
               </div>
 
-              <button className="remove-button">
+              <button className="remove-button" onClick={handleClick} name={item}>
                 remove
               </button>
             </li>
@@ -45,5 +55,3 @@ export const Cart = () => {
       </div>
     </article>
   )
-
-}
